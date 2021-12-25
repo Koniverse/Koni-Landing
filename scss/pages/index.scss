@@ -1,0 +1,35 @@
+.page-index {
+  .koni-header-background {
+    position: relative;
+    height: 1000px;
+  }
+
+  .koni-hp-section-title {
+    max-width: 822px;
+  }
+
+  .koni-portfolios-wrapper {
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .koni-partners-and-backers-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .koni-header-background {
+    width: 100%;
+  }
+
+  .koni-top-background-video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,21 @@
+extends ../_layouts/main
+
+block append head
+    meta(property='og:description' content=siteDescription)
+    meta(property='og:url' content=rootUrl('/'))
+    meta(property='description' content=siteDescription)
+
+block content
+    .koni-header-background
+        video#myVideo.koni-top-background-video(autoplay=true muted=true loop=true)
+            source(src=url('/video-background/home-1.mp4') type='video/mp4')
+            |           Your browser does not support HTML5 video.
+        .container.px-4
+            .koni-hp-section-title.h-fz-76.h-t-center We research & invest in great solutions.
+
+    //.koni-portfolios-wrapper
+    //    each portfolio in aboutUs.portfolio
+    //        +koni-portfolio-item(portfolio)
+    //.koni-partners-and-backers-wrapper
+    //    each partnerAndBacker in aboutUs.partnersAndBackers
+    //        +koni-partner-and-backer-item(partnerAndBacker)

@@ -1,0 +1,15 @@
+mixin footer
+    footer.koni-footer
+        .koni-footer-linear-background
+            img.koni-footer-galaxy-center-logo(src=url('/images/footer-galaxy-center.png'))
+            img.koni-footer-galaxy-star-around-1(src=url('/images/footer-galaxy-star-around-1.png'))
+            img.koni-footer-galaxy-star-around-2(src=url('/images/footer-galaxy-star-around-2.png'))
+            img.koni-footer-galaxy-star-around-3(src=url('/images/footer-galaxy-star-around-3.png'))
+            img.koni-footer-galaxy-star-around-4(src=url('/images/footer-galaxy-star-around-4.png'))
+            .koni-footer-follow-us.h-fz-18.h-t-uppercase follow us
+            .koni-footer-interested.h-fz-40.h-t-center Are you interested in collaborating with Koni Studio?
+            .koni-social-networks-wrapper
+                each socialNetWork in footerLink
+                    +koni-social-network-item(socialNetWork.text)
+        .koni-footer-copyright-container
+            .koni-footer-copyright-text.h-fz-15 © Copyright 2021 KoniStudio

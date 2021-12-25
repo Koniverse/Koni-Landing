@@ -1,0 +1,64 @@
+.h-t-center {
+  text-align: center;
+}
+
+.ff-sans {
+  font-family: var(--sans-font);
+}
+
+.h-t-uppercase {
+  text-transform: uppercase;
+}
+
+.h-fz-76 {
+  font-size: 76px;
+  line-height: 90px;
+}
+
+.h-fz-68 {
+  font-size: 68px;
+  line-height: 86px;
+}
+
+.h-fz-40 {
+  font-size: 40px;
+  line-height: 58px;
+}
+
+.h-fz-26 {
+  font-size: 26px;
+  line-height: 33.8px;
+}
+
+.h-fz-20 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.h-fz-18 {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.h-fz-15 {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.h-fz-12 {
+  font-size: 12px;
+  line-height: 15.6px;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+.link-highlight-on-hover {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+}

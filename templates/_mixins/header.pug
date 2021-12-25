@@ -1,0 +1,23 @@
+mixin header
+    - var active = (name) => templateName === name ? 'active' : '';
+    - var extractTemplateName = (url) => {if (url === '/') return 'index'; return url ? url.replace('/', '').replace('.html', '') : ''};
+    header.koni-header.koni-header-desktop.d-xl-flex
+        .koni-header-menu-wrapper
+            ul.koni-header-menu.koni-header__left-menu
+                each leftItem in header.leftMenu
+                    .koni-menu-item-btn
+                        a(href=url(leftItem.url) class=active(extractTemplateName(leftItem.url)) target=leftItem.target)=__(leftItem.text)
+            a.koni-header__logo(href=url('/'))
+                img(src=url('images/header-logo.svg'))
+
+            ul.koni-header-menu.koni-header__right-menu
+                each rightItem in header.rightMenu
+                    .koni-menu-item-btn
+                        a(href=url(rightItem.url) class=active(extractTemplateName(rightItem.url)) target=rightItem.target)=__(rightItem.text)
+
+    header.koni-header-mobile.d-xl-none
+        div.koni-header-mobile__hamberger(role='button')
+            div.koni-header-mobile__hamberger-meat
+        div.koni-header-mobile__main
+            a.koni-header-mobile__logo(href=url('/', locale))
+                img(src=url('/images/header-logo.svg'))

@@ -1,52 +1,27 @@
 [
   {
-    "text": "Github",
-    "url": "https://github.com/galacticcouncil",
-    "target": "_blank"
+  "text": "twitter",
+  "url": "#",
+  "target": "_blank"
   },
   {
-    "text": "Twitter",
-    "url": "https://twitter.com/hydra_dx",
-    "target": "_blank"
-  },
-  {
-    "text": "Discord",
-    "url": "https://discord.gg/enn3P9tDMe",
-    "target": "_blank"
-  },
-  {
-    "text": "Telegram",
-    "url": "https://t.me/hydradx",
-    "target": "_blank"
-  },
-  {
-    "text": "Docs",
-    "url": "https://docs.hydradx.io/",
-    "target": "_blank"
-  },
-  {
-    "text": "FAQs",
-    "url": "https://t.me/HydraDX_FAQ",
-    "target": "_blank"
-  },
-  {
-    "text": "Jobs",
+    "text": "telegram",
     "url": "#",
     "target": "_blank"
   },
   {
-    "text": "Snakenet",
-    "url": "https://docs.hydradx.io/snakenet",
+    "text": "discord",
+    "url": "#",
     "target": "_blank"
   },
   {
-    "text": "Claims",
-    "url": "https://docs.hydradx.io/claim",
+    "text": "github",
+    "url": "#",
     "target": "_blank"
   },
   {
-    "text": "Blog",
-    "url": "https://hydradx.substack.com/",
+    "text": "youtube",
+    "url": "#",
     "target": "_blank"
   }
 ]

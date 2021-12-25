@@ -1,0 +1,31 @@
+.koni-advisor-item-container {
+  max-width: 204px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.koni-advisor-item-container:first-child {
+  margin-left: 0;
+}
+
+.koni-advisor-item-container:last-child {
+  margin-right: 0;
+}
+
+.koni-advisor-item-img {
+  max-width: 100px;
+  height: auto;
+}
+
+.koni-advisor-item-text {
+  color: var(--primary-color);
+  margin: 21px 0 8px;
+}
+
+.koni-advisor-item-subtext {
+  line-height: 24px;
+  max-width: 100%;
+}
+

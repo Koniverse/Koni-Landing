@@ -1,0 +1,5 @@
+mixin koni-advisors-item(advisorImage, advisorName, advisorPosition)
+    .koni-advisor-item-container
+        img.koni-advisor-item-img(src=url(`images/advisors/${advisorImage}.png`))
+        .koni-advisor-item-text.h-t-uppercase.h-t-center.h-fz-18=advisorName
+        .koni-advisor-item-subtext.h-t-center=advisorPosition

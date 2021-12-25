@@ -1,0 +1,13 @@
+.koni-button-container {
+  padding: 15px 32px;
+  background-color: var(--primary-color);
+  box-shadow: 0px 10px 20px rgba(0, 254, 206, 0.5);
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.koni-button-text {
+  color: var(--button-text-color);
+  text-transform: uppercase;
+}

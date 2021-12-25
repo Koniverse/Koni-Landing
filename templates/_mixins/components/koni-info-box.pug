@@ -1,0 +1,21 @@
+mixin koni-basic-info-box(basicInfoBoxTitle, basicInfoBoxText)
+    .koni-basic-info-box
+        .koni-basic-info-box__title.h-fz-26=basicInfoBoxTitle
+        .koni-basic-info-box__text.h-fz-15=basicInfoBoxText
+
+mixin koni-galaxy-info-box(galaxyInfoBoxImg ,galaxyInfoBoxTitle, galaxyInfoBoxText, extraClass)
+    img.koni-galaxy-info-box-img(src=url(`images/${galaxyInfoBoxImg}.png`) class=`${extraClass}`)
+    +koni-basic-info-box(galaxyInfoBoxTitle, galaxyInfoBoxText)
+
+mixin koni-linear-info-box(infoBoxHeaderImg, infoBoxHeaderTitle, infoBoxHeaderText, infoBoxBodyText)
+    .koni-linear-info-box-container
+        .koni-linear-info-wrapper
+            .koni-linear-info-box-header
+                img.koni-linear-info-box-header-image(src=url(`images/${infoBoxHeaderImg}.png`))
+                .koni-linear-info-box-header-right-side
+                    .koni-linear-info-box-header-right-side__title.h-fz-18.h-t-uppercase=infoBoxHeaderTitle
+                    .koni-linear-info-box-header-right-side__text.h-fz-12.h-t-uppercase=infoBoxHeaderText
+            .koni-linear-info-box-body
+                .koni-linear-info-box-body__text.h-fz-15=infoBoxBodyText
+            .koni-linear-info-box-footer
+                img.koni-linear-info-box-footer-img(src=`images/footer-social.png`)

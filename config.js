@@ -1,4 +1,7 @@
 const eventRegister = require('./eventRegister');
+const aboutUs = require('./data/about-us.json');
+const header = require('./data/header.json');
+const footerLink = require('./data/footerLinks.json');
 
 module.exports = {
     baseUrl: '',
@@ -11,4 +14,7 @@ module.exports = {
     locales: ['en'],
     defaultLocale: 'en',
     eventRegister,
+    aboutUs,
+    header,
+    footerLink
 };

@@ -1,84 +1,35 @@
 {
-  "menu": [
+  "leftMenu": [
     {
-      "text": "about",
-      "url": "/#",
-      "dropdown": true,
-      "childrenArr": [
-        "tokenomics",
-        "democracy"
-      ],
-      "dropdownItem": [
-        {
-          "url": "/tokenomics.html",
-          "text": "Tokenomics"
-        },
-        {
-          "url": "/democracy.html",
-          "text": "Democracy"
-        }
-      ]
+      "text": "about us",
+      "url": "/"
     },
     {
-      "text": "basilisk",
-      "url": "https://bsx.fi/",
-      "dropdown": false,
+      "text": "activities",
+      "url": "#",
       "target": "_blank"
     },
     {
-      "text": "dummies",
-      "url": "https://docs.hydradx.io/",
-      "dropdown": false,
-      "target": "_blank"
-    },
-    {
-      "text": "grants & bouties",
-      "url": "https://docs.hydradx.io/new_deal",
-      "dropdown": false,
-      "target": "_blank"
-    },
-    {
-      "text": "new letter",
-      "url": "https://hydradx.substack.com/",
-      "dropdown": false,
-      "target": "_blank"
-    },
-    {
-      "text": "faq",
-      "url": "https://t.me/HydraDX_FAQ",
-      "dropdown": false,
+      "text": "product",
+      "url": "#",
       "target": "_blank"
     }
   ],
-  "socialNetwork": [
+  "rightMenu": [
     {
-      "name": "twitter",
-      "color": "twitter-color",
-      "url": "https://twitter.com/hydra_dx",
+      "text": "advisors",
+      "url": "#",
       "target": "_blank"
     },
     {
-      "name": "github",
-      "color": "github-color",
-      "url": "https://github.com/galacticcouncil",
+      "text": "partner & backer",
+      "url": "#",
       "target": "_blank"
     },
     {
-      "name": "telegram",
-      "color": "telegram-color",
-      "url": "https://t.me/hydradx",
-      "target": "_blank"
-    },
-    {
-      "name": "discord",
-      "color": "discord-color",
-      "url": "https://discord.gg/enn3P9tDMe",
+      "text": "blog",
+      "url": "#",
       "target": "_blank"
     }
-  ],
-  "languages": {
-    "en": "Eng",
-    "vi": "Vie"
-  },
-  "launchAppUrl": "/#"
+  ]
 }
