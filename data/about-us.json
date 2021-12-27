@@ -1,4 +1,45 @@
 {
+  "visionAndMission": [
+    {
+      "title": "Our Vision",
+      "text": "Our mission is to become a great connecting platform between Web 2.0 and 3.0 through activities that contribute practical and long-term value to the development of the ecosystem."
+    },
+    {
+      "title": "Our Misson",
+      "text": "Our mission is to become a great connecting platform between Web 2.0 and 3.0 through activities that contribute practical and long-term value to the development of the ecosystem."
+    }
+  ],
+  "activities": [
+    {
+      "img": "activities-img-1",
+      "title": "Investment",
+      "text": "We seek and invest in quality and ambitious Web 3.0 projects in the early stages to help them get the funding to launch their ambitious projects."
+    },
+    {
+      "img": "activities-img-2",
+      "title": "Product Development",
+      "text": "In addition to financial investment, we also spend time researching and developing products that support users to quickly access and apply Web 3.0 technology to their lives and activities."
+    },
+    {
+      "img": "activities-img-3",
+      "title": "Communication",
+      "text": "Most users know about blockchain through the concept of Cryptocurrencies or potential projects that help them earn a lot of money quickly, but we want to give users a lot of information about a giant industry that will change the world in the next 10-20 years through media support for serious and potential Web 3.0 projects."
+    }
+  ],
+  "ourProduct": {
+    "koniWallet": {
+      "title": "Koni Wallet",
+      "text": "A browser-based wallet extension that helps users easily access Web 3.0 applications on the Polkadot ecosystem with the ability to directly interact with the popular Polkadot JS API library of the Polkadot ecosystem and overcome the problems that are hindering the ecosystem in terms of user experience."
+    },
+    "koniConnect": {
+      "title": "Koni Connect",
+      "text": "Is a bridge application between Web 2.0 and 3.0 "
+    },
+    "koniVerse": {
+      "title": "Koniverse",
+      "text": "Web 3.0 will change the governance model of traditional organizations to the DAO"
+    }
+  },
   "portfolio": [
     "polkadot",
     "kusama",

@@ -2,12 +2,24 @@
   text-align: center;
 }
 
+.h-color {
+  color: var(--primary-color);
+}
+
 .ff-sans {
   font-family: var(--sans-font);
 }
 
 .h-t-uppercase {
   text-transform: uppercase;
+}
+
+.h-t-left {
+  text-align: left;
+}
+
+.h-t-right {
+  text-align: right;
 }
 
 .h-fz-76 {

@@ -19,3 +19,15 @@ mixin koni-linear-info-box(infoBoxHeaderImg, infoBoxHeaderTitle, infoBoxHeaderTe
                 .koni-linear-info-box-body__text.h-fz-15=infoBoxBodyText
             .koni-linear-info-box-footer
                 img.koni-linear-info-box-footer-img(src=`images/footer-social.png`)
+
+mixin koni-filled-info-box-1(filledInfoBoxTitle1, filledInfoBoxText1, extraClass1)
+    .koni-filled-info-box-1-container(class=`${extraClass1}`)
+        .koni-filled-info-box-1__title.h-fz-40=filledInfoBoxTitle1
+        .koni-filled-info-box-1__text.h-fz-15=filledInfoBoxText1
+        .koni-filled-info-box-1-btn
+
+mixin koni-filled-info-box-2(filledInfoBoxTitle2, filledInfoBoxText2, extraClass2)
+    .koni-filled-info-box-2-container(class=`${extraClass2}`)
+        .koni-filled-info-box-2__title.h-fz-40=filledInfoBoxTitle2
+        .koni-filled-info-box-2__text.h-fz-15=filledInfoBoxText2
+        .koni-filled-info-box-2-btn

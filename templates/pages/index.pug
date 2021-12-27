@@ -6,12 +6,57 @@ block append head
     meta(property='description' content=siteDescription)
 
 block content
+    //.koni-hp-container
+    //    img(src=url('/images/star.png'))
     .koni-header-background
         video#myVideo.koni-top-background-video(autoplay=true muted=true loop=true)
             source(src=url('/video-background/home-1.mp4') type='video/mp4')
             |           Your browser does not support HTML5 video.
         .container.px-4
-            .koni-hp-section-title.h-fz-76.h-t-center We research & invest in great solutions.
+            .koni-hp-first-section-container
+                .koni-hp-section-title.h-fz-76.h-t-center We research & invest in great solutions.
+                .koni-hp-section-subtitle.h-fz-20.h-t-center That support the growth of the Web3 ecosystem.
+                +koni-button('start building')
+    .koni-hp-second-section-container
+        .koni-video-background-2
+            video#myVideo2.koni-background-video-2(autoplay=true muted=true loop=true)
+                source(src=url('/video-background/home-2.mp4') type='video/mp4')
+                |           Your browser does not support HTML5 video.
+            .koni-hp-transform-background
+        .container.px-4
+            .row.gx-0
+                .koni-hp-second-section-left-item.col-lg-6
+                    .h-t-uppercase.h-color.h-fz-18 koni studio
+                    .koni-hp-second-section-left-item__text.h-fz-40 A studio of researchers, product developers, and long-term investors.
+                .koni-hp-second-section-right-item.col-lg-6
+                    each visionAndMission in aboutUs.visionAndMission
+                        +koni-basic-info-box(visionAndMission.title, visionAndMission.text)
+
+    .container.px-4
+        .koni-hp-third-section-container.row.gx-0
+            .koni-hp-third-section-title.h-fz-68.h-t-right Our Activities
+            //img.koni-hp-third-section-right-background(src=url("/images/third-background-img.svg"))
+            each activityItem in aboutUs.activities
+                .koni-hp-third-section-item.col-xl-4
+                    +koni-galaxy-info-box(activityItem.img, activityItem.title, activityItem.text)
+
+    .container.px-4
+        .koni-hp-our-product-section-container
+            .koni-hp-our-product-section-title.h-fz-68.h-t-left Our Product
+            .koni-hp-our-product-content-wrapper
+                +koni-filled-info-box-1(aboutUs.ourProduct.koniWallet.title, aboutUs.ourProduct.koniWallet.text, 'koni-hp-our-product-koni-wallet')
+                +koni-filled-info-box-2(aboutUs.ourProduct.koniConnect.title, aboutUs.ourProduct.koniConnect.text, 'koni-hp-our-product-koni-connect')
+                +koni-filled-info-box-2(aboutUs.ourProduct.koniVerse.title, aboutUs.ourProduct.koniVerse.text, 'koni-hp-our-product-koniverse')
+    .koni-hp-our-team-container
+        img.koni-our-team-background-img(src=url('images/our-team-background.png'))
+        .container.px-4
+            .koni-hp-our-team-content-wrapper
+                .koni-hp-our-team-left-content
+                    video.koni-our-team-background-video(autoplay=true muted=true loop=true)
+                        source(src=url('/video-background/home-3.mp4') type='video/mp4')
+                        |           Your browser does not support HTML5 video.
+                .koni-hp-our-team-right-content
+                    .koni-hp-our-team-title.h-fz-68.h-t-right Our Team
 
     //.koni-portfolios-wrapper
     //    each portfolio in aboutUs.portfolio
