@@ -58,9 +58,32 @@ block content
                 .koni-hp-our-team-right-content
                     .koni-hp-our-team-title.h-fz-68.h-t-right Our Team
 
-    //.koni-portfolios-wrapper
-    //    each portfolio in aboutUs.portfolio
-    //        +koni-portfolio-item(portfolio)
-    //.koni-partners-and-backers-wrapper
-    //    each partnerAndBacker in aboutUs.partnersAndBackers
-    //        +koni-partner-and-backer-item(partnerAndBacker)
+    .koni-portfolios-container
+        video.koni-background-video-4(autoplay=true muted=true loop=true)
+            source(src=url('/video-background/home-4.mp4') type='video/mp4')
+            |           Your browser does not support HTML5 video.
+
+        .container.px-4
+            .koni-hp-our-advisor-container
+                .koni-hp-our-advisor-title.h-t-left.h-fz-68 Our Advisor
+                .koni-hp-our-advisor-wrapper
+                    each advisor in aboutUs.advisors
+                        +koni-advisors-item(advisor.img, advisor.name, advisor.position)
+
+        .container.px-4
+            .koni-hp-our-portfolio-title.h-fz-18.h-t-uppercase our portfolio
+            .koni-hp-our-portfolio-content
+                each portfolio in aboutUs.portfolio
+                    +koni-portfolio-item(portfolio)
+
+            .koni-hp-partner-and-backer-title.h-fz-18.h-t-uppercase partner and backer
+            .koni-partners-and-backers-wrapper
+                each partnerAndBacker in aboutUs.partnersAndBackers
+                    +koni-partner-and-backer-item(partnerAndBacker)
+
+        .container.px-4
+            .koni-hp-blogposts-container
+                .koni-hp-blogposts-title.h-fz-68.h-t-left Blog Posts
+                .koni-hp-blogposts-content-wrapper
+                    each blogpost in aboutUs.blogPosts
+                        +koni-linear-info-box2(blogpost.title, blogpost.subtitle, blogpost.text)

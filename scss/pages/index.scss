@@ -68,17 +68,6 @@
     margin: 34px 0 50px;
   }
 
-  .koni-portfolios-wrapper {
-    margin-top: 300px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .koni-partners-and-backers-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .koni-header-background {
     width: 100%;
   }
@@ -178,5 +167,52 @@
 
   .koni-hp-our-team-right-content {
     flex: 2;
+  }
+
+  .koni-hp-our-advisor-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .koni-hp-our-advisor-title {
+    margin: 170px 0 55px;
+  }
+
+  .koni-portfolios-container {
+    position: relative;
+  }
+
+  .koni-background-video-4 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .koni-hp-our-portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+  }
+
+  .koni-hp-our-portfolio-title, .koni-hp-partner-and-backer-title {
+    color: var(--primary-color);
+    margin-top: 132px;
+  }
+
+  .koni-hp-partner-and-backer-title {
+    color: var(--primary-color);
+    margin-top: 100px;
+  }
+
+  .koni-partners-and-backers-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .koni-hp-blogposts-content-wrapper {
+    display: flex;
   }
 }
