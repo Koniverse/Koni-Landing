@@ -1,8 +1,16 @@
 .koni-portfolio-container {
   max-width: 170px;
-  margin: 38px 40px;
+  margin: 19px 40px;
 }
 
 .koni-portfolio-logo {
   height: auto;
 }
+
+@media (max-width: breakpoint-min('xxl')) {
+  .koni-portfolio-container {
+    max-width: 150px;
+    margin: 19px;
+  }
+}
+

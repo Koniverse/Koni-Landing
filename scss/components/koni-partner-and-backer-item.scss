@@ -5,3 +5,9 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: breakpoint-min('xl')) {
+  .koni-partner-and-backer-item-container {
+    margin: 20px;
+  }
+}

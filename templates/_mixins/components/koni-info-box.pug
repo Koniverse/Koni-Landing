@@ -12,12 +12,14 @@ mixin koni-filled-info-box-1(filledInfoBoxTitle1, filledInfoBoxText1, extraClass
         .koni-filled-info-box-1__title.h-fz-40=filledInfoBoxTitle1
         .koni-filled-info-box-1__text.h-fz-15=filledInfoBoxText1
         .koni-filled-info-box-1-btn
+            +koni-button-with-icon('show less', 'minus', '#')
 
 mixin koni-filled-info-box-2(filledInfoBoxTitle2, filledInfoBoxText2, extraClass2)
     .koni-filled-info-box-2-container(class=`${extraClass2}`)
         .koni-filled-info-box-2__title.h-fz-40=filledInfoBoxTitle2
         .koni-filled-info-box-2__text.h-fz-15=filledInfoBoxText2
         .koni-filled-info-box-2-btn
+            +koni-button-with-icon('show more', 'plus', '#')
 
 mixin koni-linear-info-box(infoBoxHeaderImg, infoBoxHeaderTitle, infoBoxHeaderText, infoBoxBodyText)
     .koni-linear-info-box-container

@@ -20,7 +20,7 @@
     position: absolute;
     z-index: -1;
     top: 0;
-    height: 100%;
+    width: 100%;
   }
 
   .koni-background-video-2 {
@@ -39,6 +39,10 @@
 
   .koni-hp-second-section-left-item {
     margin-top: 16px;
+  }
+
+  .koni-hp-second-section-left-item-btn {
+    display: inline-block;
   }
 
   .koni-hp-second-section-right-item {
@@ -91,7 +95,8 @@
     letter-spacing: -0.06em;
     font-weight: 600;
     position: absolute;
-    right: -60px;
+    //right: -60px;
+    right: 0;
   }
 
   .koni-hp-third-section-right-background {
@@ -104,15 +109,17 @@
     padding: 165px 38px 0;
   }
 
-  .koni-hp-third-section-item:last-child {
-    padding-right: 0;
-    padding-top: 248px;
-  }
 
   .koni-hp-third-section-item:first-child {
     padding-left: 0;
     padding-top: 70px;
   }
+
+  .koni-hp-third-section-item:last-child {
+    padding-right: 0;
+    padding-top: 248px;
+  }
+
 
   .koni-hp-our-product-content-wrapper {
     display: flex;
@@ -167,15 +174,54 @@
 
   .koni-hp-our-team-right-content {
     flex: 2;
+    width: 100%;
+  }
+
+  .koni-hp-our-team-slicker-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .koni-hp-our-team-group {
+    padding-right: 90px;
+    padding-top: 15px;
+  }
+
+  .koni-hp-group-wrapper {
+    display: flex;
+  }
+
+  .koni-hp-child-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .koni-hp-child-group:first-child {
+    margin-top: 50px;
   }
 
   .koni-hp-our-advisor-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .koni-hp-our-advisor-title {
-    margin: 170px 0 55px;
+    padding: 20px 0 55px;
+  }
+
+  .koni-hp-ouradvisor-slicker-wrapper {
+    .slick-prev, .slick-next {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      top: -120px;
+    }
+
+    .slick-prev {
+      right: 55px;
+    }
   }
 
   .koni-portfolios-container {
@@ -193,7 +239,7 @@
   .koni-hp-our-portfolio-content {
     display: flex;
     flex-wrap: wrap;
-    max-width: 50%;
+    max-width: 60%;
   }
 
   .koni-hp-our-portfolio-title, .koni-hp-partner-and-backer-title {
@@ -209,10 +255,62 @@
   .koni-partners-and-backers-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+  }
+
+  .koni-hp-blogposts-container {
+    margin-bottom: 260px;
   }
 
   .koni-hp-blogposts-content-wrapper {
     display: flex;
+  }
+
+  @media (max-width: breakpoint-min('xxl')) {
+    .koni-header-background {
+      height: 720px;
+    }
+
+    .koni-hp-second-section-right-item .koni-basic-info-box {
+      margin-right: 0;
+    }
+    .koni-hp-second-section-container {
+      margin-top: 0;
+      height: 1000px;
+    }
+  }
+
+  @media (max-width: breakpoint-min('xl')) {
+    .koni-hp-group-wrapper {
+      flex-direction: column;
+    }
+
+    .koni-hp-our-portfolio-content {
+      max-width: 100%;
+      justify-content: space-around;
+    }
+
+    .koni-hp-second-section-container {
+      height: 900px;
+    }
+
+    .koni-hp-third-section-item,
+    .koni-hp-third-section-item:last-child {
+      padding: 60px 0 0;
+    }
+
+    .koni-hp-third-section-item:first-child {
+      padding: 160px 0 0;
+    }
+  }
+
+  @media (max-width: breakpoint-min('sm')) {
+    .koni-header-background {
+      height: 500px;
+    }
+
+    .koni-hp-first-section-container {
+      padding-top: 60px;
+    }
   }
 }

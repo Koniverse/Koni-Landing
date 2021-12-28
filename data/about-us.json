@@ -40,33 +40,167 @@
       "text": "Web 3.0 will change the governance model of traditional organizations to the DAO"
     }
   },
+  "ourTeams": [
+    [
+      [
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        },
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        }
+      ],
+      [
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        },
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        },
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        }
+      ],
+      [
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        },
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        },
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        }
+      ],
+      [
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        },
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        },
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        }
+      ],
+      [
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        },
+        {
+          "title": "hieu dao",
+          "subtitle": "head of operation",
+          "text": "Join a fast-growing community of developers and innovators connected all over the world, building the new era of the internet."
+        }
+      ]
+    ]
+  ],
   "advisors": [
-    {
-      "img": "kienbui",
-      "name": "kien bui",
-      "position": "Founder Web3VN & Polkadot Vietnam"
-    },
-    {
-      "img": "hungdinh",
-      "name": "hung dinh",
-      "position": "Founder Rada Network"
-    },
-    {
-      "img": "tuananhdo",
-      "name": "tuan anh do",
-      "position": "Founder Appota"
-    },
-    {
-      "img": "thongtran",
-      "name": "thong tran",
-      "position": "Founder and CEO of Merchize"
-    },
-    {
-      "img": "tungtran",
-      "name": "tung tran",
-      "position": "Founder TK Ventures"
-    }
-
+    [
+      {
+        "img": "kienbui",
+        "name": "kien bui",
+        "position": "Founder Web3VN & Polkadot Vietnam"
+      },
+      {
+        "img": "hungdinh",
+        "name": "hung dinh",
+        "position": "Founder Rada Network"
+      },
+      {
+        "img": "tuananhdo",
+        "name": "tuan anh do",
+        "position": "Founder Appota"
+      },
+      {
+        "img": "thongtran",
+        "name": "thong tran",
+        "position": "Founder and CEO of Merchize"
+      },
+      {
+        "img": "tungtran",
+        "name": "tung tran",
+        "position": "Founder TK Ventures"
+      }
+    ],
+    [
+      {
+        "img": "kienbui",
+        "name": "kien bui",
+        "position": "Founder Web3VN & Polkadot Vietnam"
+      },
+      {
+        "img": "hungdinh",
+        "name": "hung dinh",
+        "position": "Founder Rada Network"
+      },
+      {
+        "img": "tuananhdo",
+        "name": "tuan anh do",
+        "position": "Founder Appota"
+      },
+      {
+        "img": "thongtran",
+        "name": "thong tran",
+        "position": "Founder and CEO of Merchize"
+      },
+      {
+        "img": "tungtran",
+        "name": "tung tran",
+        "position": "Founder TK Ventures"
+      }
+    ]
   ],
   "portfolio": [
     "polkadot",

@@ -1,3 +1,9 @@
 mixin koni-button(buttonText)
     .koni-button-container
         .koni-button-text.h-fz-15=buttonText
+
+mixin koni-button-with-icon(buttonWithIconText, buttonWithIconImg, buttonWithIconUrl)
+    a.koni-button-with-icon-container(href=`${buttonWithIconUrl}` target="_blank")
+        .koni-button-with-icon__text.h-fz-15.h-t-uppercase=buttonWithIconText
+        .koni-button-with-icon-img-wrapper
+            img.koni-button-with-icon__icon(src=url(`images/${buttonWithIconImg}.svg`))

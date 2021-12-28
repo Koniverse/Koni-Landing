@@ -21,7 +21,7 @@
 
 .koni-linear-info-box-container {
   display: inline-block;
-  margin: 75px 0;
+  margin: 15px;
   position:relative;
   z-index:0;
 }
@@ -81,7 +81,6 @@
 
 .koni-linear-info-box-body__text {
   color: var(--white-color);
-  max-width: 226px;
 }
 
 .koni-linear-info-box-footer-img {
@@ -138,6 +137,8 @@
 
 //filled box-----------------------------------------
 .koni-filled-info-box-1-container {
+  display: flex;
+  flex-direction: column;
   padding: 48px 40px 24px;
   border-radius: 5px;
   background-color: var(--primary-color);
@@ -152,11 +153,23 @@
 .koni-filled-info-box-1__text {
   color: var(--dark-text-color);
   margin-bottom: 70px;
+  height: 100%;
+}
+
+.koni-filled-info-box-1-btn {
+  justify-self: flex-end;
+  align-self: flex-start;
+}
+
+.koni-filled-info-box-1-btn .koni-button-with-icon__text {
+  color: var(--dark-text-color);
 }
 
 .koni-filled-info-box-2-container {
   padding: 48px 20px 24px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .koni-filled-info-box-2__title {
@@ -165,4 +178,12 @@
 
 .koni-filled-info-box-2__text {
   margin-bottom: 70px;
+  height: 100%;
 }
+
+.koni-filled-info-box-2-btn {
+  justify-self: flex-end;
+  align-self: flex-start;
+}
+
+

@@ -13,7 +13,8 @@ html(lang='en')
             +favicon-and-appicons
 
             link(rel='stylesheet' href=url('/main.css'))
-
+            link(rel='stylesheet' href=url('slick/slick.css') type='text/css')
+            link(rel='stylesheet' href=url('slick/slick-theme.css') type='text/css')
             +common-og-tags(displayTitle)
             +google-analytics('G-TRACKING-CODE')
         block head-extra
@@ -22,5 +23,6 @@ html(lang='en')
             main.page-content(class=`page-${templateName}`)
                 +header
                 block content
-                //+footer
+                +footer
         script(src=url('/main.js'))
+        script(src=url('slick/slick.min.js'))

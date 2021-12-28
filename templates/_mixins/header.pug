@@ -1,6 +1,7 @@
 mixin header
     - var active = (name) => templateName === name ? 'active' : '';
     - var extractTemplateName = (url) => {if (url === '/') return 'index'; return url ? url.replace('/', '').replace('.html', '') : ''};
+    .koni-header__placeholder
     header.koni-header.koni-header-desktop.d-xl-flex
         .koni-header-menu-wrapper
             ul.koni-header-menu.koni-header__left-menu

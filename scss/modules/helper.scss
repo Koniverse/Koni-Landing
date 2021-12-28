@@ -79,3 +79,44 @@
     color: var(--primary-color);
   }
 }
+
+@media (max-width: breakpoint-min('xxl')) {
+  .h-fz-76 {
+    font-size: 68px;
+    line-height: 82px;
+  }
+
+  .h-fz-68 {
+    font-size: 64px;
+    line-height: 72px;
+  }
+}
+
+@media (max-width: breakpoint-min('xl')) {
+  .h-fz-76 {
+    font-size: 64px;
+    line-height: 72px;
+  }
+
+  .h-fz-68 {
+    font-size: 58px;
+    line-height: 64px;
+  }
+}
+
+@media (max-width: breakpoint-min('sm')) {
+  .h-fz-76 {
+    font-size: 40px;
+    line-height: 64px;
+  }
+
+  .h-fz-68 {
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  .h-fz-40 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
