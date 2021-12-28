@@ -104,6 +104,13 @@
   }
 }
 
+@media (max-width: breakpoint-min('md')) {
+  .h-fz-68 {
+    font-size: 50px;
+    line-height: 56px;
+  }
+}
+
 @media (max-width: breakpoint-min('sm')) {
   .h-fz-76 {
     font-size: 40px;

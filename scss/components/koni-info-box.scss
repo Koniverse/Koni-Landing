@@ -186,4 +186,24 @@
   align-self: flex-start;
 }
 
+@media (max-width: breakpoint-min('lg')) {
+  .koni-linear-info-box-container-2, .koni-linear-info-box-container-2:last-child, .koni-linear-info-box-container-2:first-child{
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: breakpoint-min('md')) {
+  .koni-linear-info-box-container {
+    margin: 15px 0;
+  }
+
+  .koni-linear-info-box-body {
+    margin: 17px 0;
+  }
+
+  .koni-linear-info-box-container-2, .koni-linear-info-box-container-2:last-child, .koni-linear-info-box-container-2:first-child{
+    margin: 15px 0;
+  }
+}
+
 

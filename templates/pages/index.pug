@@ -78,11 +78,9 @@ block content
             .koni-hp-our-advisor-container
                 .koni-hp-our-advisor-title.h-t-left.h-fz-68 Our Advisor
                 .koni-hp-ouradvisor-slicker-wrapper
-                    each advisorGr in aboutUs.advisors
-                        .koni-hp-ouradvisor-slicker-item
-                                .koni-hp-our-advisor-wrapper
-                                    each advisorItem in advisorGr
-                                        +koni-advisors-item(advisorItem.img, advisorItem.name, advisorItem.position)
+                    each advisorItem in aboutUs.advisors
+                        .koni-hp-our-advisor-wrapper
+                            +koni-advisors-item(advisorItem.img, advisorItem.name, advisorItem.position)
 
         .container.px-4
             .koni-hp-our-portfolio-title.h-fz-18.h-t-uppercase our portfolio

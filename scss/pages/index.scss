@@ -278,12 +278,27 @@
       margin-top: 0;
       height: 1000px;
     }
+
+    .koni-hp-ouradvisor-slicker-wrapper {
+      .slick-prev, .slick-next {
+        top: -112px;
+      }
+    }
   }
 
-  @media (max-width: breakpoint-min('xl')) {
-    .koni-hp-group-wrapper {
+  @media (max-width: breakpoint-max('xl')) {
+
+    .koni-hp-our-team-content-wrapper {
       flex-direction: column;
     }
+
+    .koni-hp-our-team-left-content {
+      display: none;
+    }
+    //
+    //.koni-hp-our-team-right-content {
+    //  order: 1;
+    //}
 
     .koni-hp-our-portfolio-content {
       max-width: 100%;
@@ -301,6 +316,46 @@
 
     .koni-hp-third-section-item:first-child {
       padding: 160px 0 0;
+    }
+  }
+
+  @media (max-width: breakpoint-min('lg')) {
+    .koni-hp-second-section-right-item {
+      padding: 80px 0 0;
+    }
+
+    .koni-hp-partner-and-backer-title {
+      margin-top: 20px;
+    }
+
+    .koni-hp-blogposts-content-wrapper {
+      flex-direction: column;
+    }
+
+
+  }
+
+  @media (max-width: breakpoint-min('md')) {
+    .koni-hp-group-wrapper {
+      flex-direction: column;
+    }
+
+    .koni-hp-our-team-slicker-container .slick-prev {
+      top: 39%;
+    }
+
+    .koni-hp-our-team-slicker-container .slick-next {
+      bottom: 40%;
+    }
+
+    .koni-hp-ouradvisor-slicker-wrapper {
+      .slick-prev, .slick-next {
+        top: -105px;
+      }
+    }
+
+    .koni-hp-our-team-group {
+      padding-right: 60px;
     }
   }
 

@@ -147,60 +147,56 @@
     ]
   ],
   "advisors": [
-    [
-      {
-        "img": "kienbui",
-        "name": "kien bui",
-        "position": "Founder Web3VN & Polkadot Vietnam"
-      },
-      {
-        "img": "hungdinh",
-        "name": "hung dinh",
-        "position": "Founder Rada Network"
-      },
-      {
-        "img": "tuananhdo",
-        "name": "tuan anh do",
-        "position": "Founder Appota"
-      },
-      {
-        "img": "thongtran",
-        "name": "thong tran",
-        "position": "Founder and CEO of Merchize"
-      },
-      {
-        "img": "tungtran",
-        "name": "tung tran",
-        "position": "Founder TK Ventures"
-      }
-    ],
-    [
-      {
-        "img": "kienbui",
-        "name": "kien bui",
-        "position": "Founder Web3VN & Polkadot Vietnam"
-      },
-      {
-        "img": "hungdinh",
-        "name": "hung dinh",
-        "position": "Founder Rada Network"
-      },
-      {
-        "img": "tuananhdo",
-        "name": "tuan anh do",
-        "position": "Founder Appota"
-      },
-      {
-        "img": "thongtran",
-        "name": "thong tran",
-        "position": "Founder and CEO of Merchize"
-      },
-      {
-        "img": "tungtran",
-        "name": "tung tran",
-        "position": "Founder TK Ventures"
-      }
-    ]
+    {
+      "img": "kienbui",
+      "name": "kien bui",
+      "position": "Founder Web3VN & Polkadot Vietnam"
+    },
+    {
+      "img": "hungdinh",
+      "name": "hung dinh",
+      "position": "Founder Rada Network"
+    },
+    {
+      "img": "tuananhdo",
+      "name": "tuan anh do",
+      "position": "Founder Appota"
+    },
+    {
+      "img": "thongtran",
+      "name": "thong tran",
+      "position": "Founder and CEO of Merchize"
+    },
+    {
+      "img": "tungtran",
+      "name": "tung tran",
+      "position": "Founder TK Ventures"
+    },
+    {
+      "img": "kienbui",
+      "name": "kien bui",
+      "position": "Founder Web3VN & Polkadot Vietnam"
+    },
+    {
+      "img": "hungdinh",
+      "name": "hung dinh",
+      "position": "Founder Rada Network"
+    },
+    {
+      "img": "tuananhdo",
+      "name": "tuan anh do",
+      "position": "Founder Appota"
+    },
+    {
+      "img": "thongtran",
+      "name": "thong tran",
+      "position": "Founder and CEO of Merchize"
+    },
+    {
+      "img": "tungtran",
+      "name": "tung tran",
+      "position": "Founder TK Ventures"
+    }
   ],
   "portfolio": [
     "polkadot",
