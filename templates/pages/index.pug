@@ -8,8 +8,8 @@ block append head
 block content
     //.koni-hp-container
     //    img(src=url('/images/star.png'))
-    .koni-header-background
-        video#myVideo.koni-top-background-video(autoplay=true muted=true loop=true)
+    .koni-header-background#about-us
+        video.koni-top-background-video(autoplay=true muted=true loop=true)
             source(src=url('/video-background/home-1.mp4') type='video/mp4')
             |           Your browser does not support HTML5 video.
         .container.px-4
@@ -34,8 +34,8 @@ block content
                     each visionAndMission in aboutUs.visionAndMission
                         +koni-basic-info-box(visionAndMission.title, visionAndMission.text)
 
-    .container.px-4
-        .koni-hp-third-section-container#our-activities
+    .container.px-4#our-activities
+        .koni-hp-third-section-container
             .koni-hp-third-section-title.h-fz-68.h-t-right Our Activities
         .row.gx-0
             //img.koni-hp-third-section-right-background(src=url("/images/third-background-img.svg"))
@@ -43,8 +43,8 @@ block content
                 .koni-hp-third-section-item.col-xl-4
                     +koni-galaxy-info-box(activityItem.img, activityItem.title, activityItem.text, '')
 
-    .container.px-4
-        .koni-hp-our-product-section-container#our-product
+    .container.px-4#our-product
+        .koni-hp-our-product-section-container
             .koni-hp-our-product-section-title.h-fz-68.h-t-left Our Product
             .koni-hp-our-product-content-wrapper
                 +koni-filled-info-box(aboutUs.ourProduct.koniWallet.title, aboutUs.ourProduct.koniWallet.text, 'koni-hp-our-product-koni-wallet', {text: 'show less', img: 'minus'})
@@ -74,13 +74,13 @@ block content
             source(src=url('/video-background/home-4.mp4') type='video/mp4')
             |           Your browser does not support HTML5 video.
 
-        .container.px-4
-            .koni-hp-our-advisor-container#our-advisors
-                .koni-hp-our-advisor-title.h-t-left.h-fz-68 Our Advisor
-                .koni-hp-ouradvisor-slicker-wrapper
-                    each advisorItem in aboutUs.advisors
-                        .koni-hp-our-advisor-wrapper
-                            +koni-advisors-item(advisorItem.img, advisorItem.name, advisorItem.position)
+    .container.px-4#our-advisors
+        .koni-hp-our-advisor-container
+            .koni-hp-our-advisor-title.h-t-left.h-fz-68 Our Advisor
+            .koni-hp-ouradvisor-slicker-wrapper
+                each advisorItem in aboutUs.advisors
+                    .koni-hp-our-advisor-wrapper
+                        +koni-advisors-item(advisorItem.img, advisorItem.name, advisorItem.position)
 
         .container.px-4
             .koni-hp-our-portfolio-title.h-fz-18.h-t-uppercase our portfolio
@@ -88,13 +88,14 @@ block content
                 each portfolio in aboutUs.portfolio
                     +koni-portfolio-item(portfolio)
 
-            .koni-hp-partner-and-backer-title.h-fz-18.h-t-uppercase#partner-and-backer partner and backer
+        .container.px-4#partner-and-backer
+            .koni-hp-partner-and-backer-title.h-fz-18.h-t-uppercase partner and backer
             .koni-partners-and-backers-wrapper
                 each partnerAndBacker in aboutUs.partnersAndBackers
                     +koni-partner-and-backer-item(partnerAndBacker)
 
-        .container.px-4
-            .koni-hp-blogposts-container#blogposts
+        .container.px-4#blogposts
+            .koni-hp-blogposts-container
                 .koni-hp-blogposts-title.h-fz-68.h-t-left Blog Posts
                 .koni-hp-blogposts-content-wrapper
                     each blogpost in aboutUs.blogPosts

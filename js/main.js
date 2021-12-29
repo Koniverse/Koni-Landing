@@ -134,7 +134,6 @@ $(function () {
     }
 
     function openInfoBox(infoBox, infoBoxText, infoBoxContent, infoBoxImg) {
-        console.log('infoBox.classList', infoBox.classList)
         infoBox.addClass('h-info-show-more');
         infoBox.removeClass('h-info-show-less');
         infoBoxText.text('show less');
@@ -175,10 +174,20 @@ $(function () {
         }
     })
 
-    $('a.koni-header-link').on('click', function(event) {
-        var $anchor = $(this);
-        const target = $anchor.attr('href').replace('/', '');
-        $('html, body').stop().animate({scrollTop: $(target).offset().top}, 500, 'swing', function() {});
-        event.preventDefault();
-    });
+    function clearActiveClass(itemArr) {
+        itemArr.each(function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active')
+            }
+        })
+    }
+
+    // $('a.koni-header-link').on('click', function(event) {
+    //     var $anchor = $(this);
+    //     const target = $anchor.attr('href').substring(1);
+    //     clearActiveClass($('a.koni-header-link'));
+    //     $anchor.addClass('active');
+    //     $('html, body').stop().animate({scrollTop: $(target).offset().top}, 500, 'swing', function() {});
+    //     event.preventDefault();
+    // });
 });

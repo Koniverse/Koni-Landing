@@ -1,4 +1,3 @@
-mixin koni-social-network-item(socialNetworkImg)
-    .koni-social-network-item-container
-
+mixin koni-social-network-item(socialNetworkImg, socialNetworkUrl)
+    a.koni-social-network-item-container(href=`${socialNetworkUrl}` target="_blank")
         img.koni-social-network-item-img(src=url(`/images/social-network/${socialNetworkImg}.svg`))
