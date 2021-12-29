@@ -1,14 +1,35 @@
 .koni-partner-and-backer-item-container {
   width: 185px;
-  margin: 40px 33px;
+  margin: 0 33px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.koni-partner-and-backer-item-img-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.koni-partner-and-backer-item-container:hover {
+  .koni-partner-and-backer-item-img {
+    opacity: 0;
+  }
+
+  .koni-partner-and-backer-item-img-hover {
+    opacity: 1;
+  }
 }
 
 @media (max-width: breakpoint-min('xl')) {
   .koni-partner-and-backer-item-container {
-    margin: 20px;
+    margin: 0 20px;
   }
 }
 

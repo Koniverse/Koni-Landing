@@ -6,30 +6,30 @@
     },
     {
       "text": "activities",
-      "url": "#",
-      "target": "_blank"
+      "url": "#our-activities",
+      "target": ""
     },
     {
       "text": "product",
-      "url": "#",
-      "target": "_blank"
+      "url": "#our-product",
+      "target": ""
     }
   ],
   "rightMenu": [
     {
       "text": "advisors",
-      "url": "#",
-      "target": "_blank"
+      "url": "#our-advisors",
+      "target": ""
     },
     {
       "text": "partner & backer",
-      "url": "#",
-      "target": "_blank"
+      "url": "#partner-and-backer",
+      "target": ""
     },
     {
       "text": "blog",
-      "url": "#",
-      "target": "_blank"
+      "url": "#blogposts",
+      "target": ""
     }
   ]
 }

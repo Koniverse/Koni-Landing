@@ -6,6 +6,14 @@
   color: var(--primary-color);
 }
 
+.h-light-color {
+  color: var(--white-color);
+}
+
+.h-dark-color {
+  color: var(--dark-text-color);
+}
+
 .ff-sans {
   font-family: var(--sans-font);
 }
@@ -80,6 +88,23 @@
   }
 }
 
+.h-info-show-less {
+  flex: 1;
+}
+
+.h-info-text-show-less {
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.h-info-show-more {
+  flex: 2;
+}
+
+
 @media (max-width: breakpoint-min('xxl')) {
   .h-fz-76 {
     font-size: 68px;
@@ -123,7 +148,7 @@
   }
 
   .h-fz-40 {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 42px;
   }
 }

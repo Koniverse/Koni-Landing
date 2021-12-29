@@ -2,8 +2,14 @@ mixin koni-button(buttonText)
     .koni-button-container
         .koni-button-text.h-fz-15=buttonText
 
-mixin koni-button-with-icon(buttonWithIconText, buttonWithIconImg, buttonWithIconUrl)
-    a.koni-button-with-icon-container(href=`${buttonWithIconUrl}` target="_blank")
+mixin koni-button-with-icon(buttonWithIconText, buttonWithIconImg)
+    .koni-button-with-icon-container
+        .koni-button-with-icon__text.h-fz-15.h-t-uppercase=buttonWithIconText
+        .koni-button-with-icon-img-wrapper
+            +koni-img-icon(buttonWithIconImg, 'koni-button-with-icon__icon')
+
+mixin koni-button-with-icon-link(buttonWithIconText, buttonWithIconImg, buttonWithIconUrl, buttonWithIconTarget)
+    a.koni-button-with-icon-container(href=`${buttonWithIconUrl}` target=`${buttonWithIconTarget}`)
         .koni-button-with-icon__text.h-fz-15.h-t-uppercase=buttonWithIconText
         .koni-button-with-icon-img-wrapper
             img.koni-button-with-icon__icon(src=url(`images/${buttonWithIconImg}.svg`))

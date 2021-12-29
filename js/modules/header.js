@@ -11,7 +11,6 @@ const isMobileMenuOpen = () => {
 }
 
 const toggleMobileMenu = () => {
-    console.log(123);
     if (isMobileMenuOpen()) {
         $mobileHeader.css('position', 'fixed');
     }

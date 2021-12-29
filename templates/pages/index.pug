@@ -29,13 +29,13 @@ block content
                     .h-t-uppercase.h-color.h-fz-18 koni studio
                     .koni-hp-second-section-left-item__text.h-fz-40 A studio of researchers, product developers, and long-term investors.
                     .koni-hp-second-section-left-item-btn
-                        +koni-button-with-icon('explore now', 'arrow-right', '#')
+                        +koni-button-with-icon-link('explore now', 'arrow-right', '#')
                 .koni-hp-second-section-right-item.col-lg-6
                     each visionAndMission in aboutUs.visionAndMission
                         +koni-basic-info-box(visionAndMission.title, visionAndMission.text)
 
     .container.px-4
-        .koni-hp-third-section-container
+        .koni-hp-third-section-container#our-activities
             .koni-hp-third-section-title.h-fz-68.h-t-right Our Activities
         .row.gx-0
             //img.koni-hp-third-section-right-background(src=url("/images/third-background-img.svg"))
@@ -44,12 +44,12 @@ block content
                     +koni-galaxy-info-box(activityItem.img, activityItem.title, activityItem.text, '')
 
     .container.px-4
-        .koni-hp-our-product-section-container
+        .koni-hp-our-product-section-container#our-product
             .koni-hp-our-product-section-title.h-fz-68.h-t-left Our Product
             .koni-hp-our-product-content-wrapper
-                +koni-filled-info-box-1(aboutUs.ourProduct.koniWallet.title, aboutUs.ourProduct.koniWallet.text, 'koni-hp-our-product-koni-wallet')
-                +koni-filled-info-box-2(aboutUs.ourProduct.koniConnect.title, aboutUs.ourProduct.koniConnect.text, 'koni-hp-our-product-koni-connect')
-                +koni-filled-info-box-2(aboutUs.ourProduct.koniVerse.title, aboutUs.ourProduct.koniVerse.text, 'koni-hp-our-product-koniverse')
+                +koni-filled-info-box(aboutUs.ourProduct.koniWallet.title, aboutUs.ourProduct.koniWallet.text, 'koni-hp-our-product-koni-wallet', {text: 'show less', img: 'minus'})
+                +koni-filled-info-box(aboutUs.ourProduct.koniConnect.title, aboutUs.ourProduct.koniConnect.text, 'koni-hp-our-product-koni-connect', {text: 'show more', img: 'plus'})
+                +koni-filled-info-box(aboutUs.ourProduct.koniVerse.title, aboutUs.ourProduct.koniVerse.text, 'koni-hp-our-product-koniverse', {text: 'show more', img: 'plus'})
     .koni-hp-our-team-container
         img.koni-our-team-background-img(src=url('images/our-team-background.png'))
         .container.px-4
@@ -75,7 +75,7 @@ block content
             |           Your browser does not support HTML5 video.
 
         .container.px-4
-            .koni-hp-our-advisor-container
+            .koni-hp-our-advisor-container#our-advisors
                 .koni-hp-our-advisor-title.h-t-left.h-fz-68 Our Advisor
                 .koni-hp-ouradvisor-slicker-wrapper
                     each advisorItem in aboutUs.advisors
@@ -88,13 +88,13 @@ block content
                 each portfolio in aboutUs.portfolio
                     +koni-portfolio-item(portfolio)
 
-            .koni-hp-partner-and-backer-title.h-fz-18.h-t-uppercase partner and backer
+            .koni-hp-partner-and-backer-title.h-fz-18.h-t-uppercase#partner-and-backer partner and backer
             .koni-partners-and-backers-wrapper
                 each partnerAndBacker in aboutUs.partnersAndBackers
                     +koni-partner-and-backer-item(partnerAndBacker)
 
         .container.px-4
-            .koni-hp-blogposts-container
+            .koni-hp-blogposts-container#blogposts
                 .koni-hp-blogposts-title.h-fz-68.h-t-left Blog Posts
                 .koni-hp-blogposts-content-wrapper
                     each blogpost in aboutUs.blogPosts

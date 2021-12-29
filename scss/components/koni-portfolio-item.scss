@@ -1,16 +1,43 @@
 .koni-portfolio-container {
   max-width: 170px;
-  margin: 19px 40px;
+  margin: 0 40px;
+  position: relative;
 }
 
-.koni-portfolio-logo {
+.koni-portfolio-logo, .koni-portfolio-logo-hover {
   height: auto;
+}
+
+.koni-portfolio-logo-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.koni-portfolio-container:hover {
+  .koni-portfolio-logo {
+    opacity: 0;
+  }
+
+  .koni-portfolio-logo-hover {
+    opacity: 1;
+  }
 }
 
 @media (max-width: breakpoint-min('xxl')) {
   .koni-portfolio-container {
     max-width: 150px;
-    margin: 19px;
+    margin: 0 19px;
   }
+}
+
+@media (max-width: breakpoint-min('md')) {
+  .koni-portfolio-container {
+    margin: 0;
+  }
+
 }
 

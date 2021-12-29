@@ -16,11 +16,16 @@
   position: relative;
 }
 
+.koni-footer-stars-wrapper {
+  position: relative;
+  margin-bottom: -330px;
+  z-index: -2;
+}
+
 .koni-footer-galaxy-center-logo {
-  max-width: 991px;
+  width: 991px;
   height: auto;
-  position: absolute;
-  bottom: 65px;
+
   z-index: -1;
 }
 
@@ -28,16 +33,16 @@
   max-width: 275px;
   position: absolute;
   height: auto;
-  left: 400px;
-  bottom: 41px;
+  left: -70px;
+  bottom: 55px;
 }
 
 .koni-footer-galaxy-star-around-2 {
   max-width: 54px;
   height: auto;
   position: absolute;
-  right: 440px;
-  top: -80px;
+  right: 5px;
+  top: 115px;
 
 }
 
@@ -45,16 +50,16 @@
   max-width: 160px;
   height: auto;
   position: absolute;
-  bottom: 70px;
-  right: 455px;
+  bottom: 75px;
+  right: 20px;
 }
 
 .koni-footer-galaxy-star-around-4 {
   max-width: 200px;
   height: auto;
   position: absolute;
-  bottom: 78px;
-  right: 42%;
+  bottom: 41px;
+  right: 318px;
   z-index: -1;
 }
 
@@ -73,10 +78,33 @@
 .koni-footer-interested {
   max-width: 635px;
   margin: 13px 0 50px;
+  text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25);
 }
 
 .koni-footer-copyright-container {
   display: flex;
   justify-content: center;
   margin: 79px 0 52px;
+}
+
+@media (max-width: breakpoint-min('xxl')) {
+  .koni-social-networks-wrapper {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: breakpoint-min('xl')) {
+  .koni-footer-copyright-container {
+    margin: 52px 0;
+  }
+}
+
+@media (max-width: breakpoint-min('sm')) {
+  .koni-footer-stars-wrapper {
+    margin-bottom: -270px;
+  }
+
+  .koni-footer-copyright-container {
+    margin: 30px 0 52px;
+  }
 }

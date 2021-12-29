@@ -7,14 +7,14 @@ mixin header
             ul.koni-header-menu.koni-header__left-menu
                 each leftItem in header.leftMenu
                     .koni-menu-item-btn
-                        a(href=url(leftItem.url) class=active(extractTemplateName(leftItem.url)) target=leftItem.target)=__(leftItem.text)
+                        a(href=url(leftItem.url) class='koni-header-link', active(extractTemplateName(leftItem.url)) target=leftItem.target)=__(leftItem.text)
             a.koni-header__logo(href=url('/'))
                 img(src=url('images/header-logo.svg'))
 
             ul.koni-header-menu.koni-header__right-menu
                 each rightItem in header.rightMenu
                     .koni-menu-item-btn
-                        a(href=url(rightItem.url) class=active(extractTemplateName(rightItem.url)) target=rightItem.target)=__(rightItem.text)
+                        a(href=url(rightItem.url) class='koni-header-link', active(extractTemplateName(rightItem.url))  target=rightItem.target)=__(rightItem.text)
 
     header.koni-header-mobile.d-xl-none
         div.koni-header-mobile__hamberger(role='button')
