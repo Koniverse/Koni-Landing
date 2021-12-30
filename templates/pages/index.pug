@@ -8,7 +8,7 @@ block append head
 block content
     //.koni-hp-container
     //    img(src=url('/images/star.png'))
-    .koni-header-background#about-us
+    .koni-header-background
         video.koni-top-background-video(autoplay=true muted=true loop=true)
             source(src=url('/video-background/home-1.mp4') type='video/mp4')
             |           Your browser does not support HTML5 video.
@@ -17,7 +17,7 @@ block content
                 .koni-hp-section-title.h-fz-76.h-t-center We research & invest in great solutions.
                 .koni-hp-section-subtitle.h-fz-20.h-t-center That support the growth of the Web3 ecosystem.
                 +koni-button('start building')
-    .koni-hp-second-section-container
+    .koni-hp-second-section-container#about-us
         .koni-video-background-2
             video#myVideo2.koni-background-video-2(autoplay=true muted=true loop=true)
                 source(src=url('/video-background/home-2.mp4') type='video/mp4')
@@ -34,14 +34,15 @@ block content
                     each visionAndMission in aboutUs.visionAndMission
                         +koni-basic-info-box(visionAndMission.title, visionAndMission.text)
 
-    .container.px-4#our-activities
-        .koni-hp-third-section-container
+    .koni-hp-third-section-container#our-activities
+        +koni-left-img-background-1
+        .koni-hp-third-section-wrapper.container.px-4
             .koni-hp-third-section-title.h-fz-68.h-t-right Our Activities
-        .row.gx-0
-            //img.koni-hp-third-section-right-background(src=url("/images/third-background-img.svg"))
-            each activityItem in aboutUs.activities
-                .koni-hp-third-section-item.col-xl-4
-                    +koni-galaxy-info-box(activityItem.img, activityItem.title, activityItem.text, '')
+            .row.gx-0
+                //img.koni-hp-third-section-right-background(src=url("/images/third-background-img.svg"))
+                each activityItem in aboutUs.activities
+                    .koni-hp-third-section-item.col-xl-4
+                        +koni-galaxy-info-box(activityItem.img, activityItem.title, activityItem.text, '')
 
     .container.px-4#our-product
         .koni-hp-our-product-section-container
@@ -82,24 +83,24 @@ block content
                     .koni-hp-our-advisor-wrapper
                         +koni-advisors-item(advisorItem.img, advisorItem.name, advisorItem.position)
 
-        .container.px-4
-            .koni-hp-our-portfolio-title.h-fz-18.h-t-uppercase our portfolio
-            .koni-hp-our-portfolio-content
-                each portfolio in aboutUs.portfolio
-                    +koni-portfolio-item(portfolio)
+    .container.px-4
+        .koni-hp-our-portfolio-title.h-fz-18.h-t-uppercase our portfolio
+        .koni-hp-our-portfolio-content
+            each portfolio in aboutUs.portfolio
+                +koni-portfolio-item(portfolio)
 
-        .container.px-4#partner-and-backer
-            .koni-hp-partner-and-backer-title.h-fz-18.h-t-uppercase partner and backer
-            .koni-partners-and-backers-wrapper
-                each partnerAndBacker in aboutUs.partnersAndBackers
-                    +koni-partner-and-backer-item(partnerAndBacker)
+    .container.px-4#partner-and-backer
+        .koni-hp-partner-and-backer-title.h-fz-18.h-t-uppercase partner and backer
+        .koni-partners-and-backers-wrapper
+            each partnerAndBacker in aboutUs.partnersAndBackers
+                +koni-partner-and-backer-item(partnerAndBacker)
 
-        .container.px-4#blogposts
-            .koni-hp-blogposts-container
-                .koni-hp-blogposts-title.h-fz-68.h-t-left Blog Posts
-                .koni-hp-blogposts-content-wrapper
-                    each blogpost in aboutUs.blogPosts
-                        +koni-linear-info-box2(blogpost.title, blogpost.subtitle, blogpost.text)
+    .container.px-4#blogposts
+        .koni-hp-blogposts-container
+            .koni-hp-blogposts-title.h-fz-68.h-t-left Blog Posts
+            .koni-hp-blogposts-content-wrapper
+                each blogpost in aboutUs.blogPosts
+                    +koni-linear-info-box2(blogpost.title, blogpost.subtitle, blogpost.text)
 
     script.
         const body = document.body;
@@ -110,6 +111,9 @@ block content
 
         window.addEventListener("scroll", () => {
             const currentScroll = window.pageYOffset;
+            if (currentScroll >= document.getElementById('blogposts').offsetTop) {
+                console.log(1234);
+            }
             if (currentScroll <= 0) {
                 body.classList.remove(scrollUp);
                 body.classList.remove('scroll');

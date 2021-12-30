@@ -106,24 +106,26 @@ $(function () {
 
     if (koniWalletBtnText.text().trim() === 'show less') {
         koniWallet.addClass('h-info-show-more');
+        koniWalletText.removeClass('h-info-text-show-less');
     } else {
         koniWallet.addClass('h-info-show-less');
-        koniWalletText.addClass('h-info-text-show-less');
     }
 
     if (koniConnectBtnText.text().trim() === 'show less') {
         koniConnect.addClass('h-info-show-more');
+        koniConnectText.removeClass('h-info-text-show-less');
     } else {
         koniConnect.addClass('h-info-show-less');
-        koniConnectText.addClass('h-info-text-show-less');
     }
 
     if (koniVerseBtnText.text().trim() === 'show less') {
         koniVerse.addClass('h-info-show-more');
+        koniVerseText.removeClass('h-info-text-show-less');
     } else {
         koniVerse.addClass('h-info-show-less');
-        koniVerseText.addClass('h-info-text-show-less');
     }
+
+    let clampTimeout;
 
     function closeInfoBox(infoBox, infoBoxText, infoBoxContent, infoBoxImg) {
         infoBox.addClass('h-info-show-less');
@@ -137,8 +139,12 @@ $(function () {
         infoBox.addClass('h-info-show-more');
         infoBox.removeClass('h-info-show-less');
         infoBoxText.text('show less');
-        infoBoxContent.removeClass('h-info-text-show-less');
         infoBoxImg.attr("href", "/images/minus.svg#icon")
+        clearTimeout(clampTimeout);
+        clampTimeout = setTimeout(() => {
+            infoBoxContent.removeClass('h-info-text-show-less');
+        }, 300);
+
     }
 
     koniWalletBtn.on('click', function () {
@@ -182,12 +188,26 @@ $(function () {
         })
     }
 
-    // $('a.koni-header-link').on('click', function(event) {
-    //     var $anchor = $(this);
-    //     const target = $anchor.attr('href').substring(1);
-    //     clearActiveClass($('a.koni-header-link'));
-    //     $anchor.addClass('active');
-    //     $('html, body').stop().animate({scrollTop: $(target).offset().top}, 500, 'swing', function() {});
-    //     event.preventDefault();
-    // });
+
+    $(document).unbind("click.menuLinkEvent");
+    if ($(window).width() <= 576) {
+        $(document).on('click.menuLinkEvent', 'a.koni-header-link', function(event) {
+            event.preventDefault();
+            var $anchor = $(this);
+            const $target = $($anchor.attr('href').substring(1)).offset().top;
+            clearActiveClass($('a.koni-header-link'));
+            $anchor.addClass('active');
+            $('html, body').stop().animate({scrollTop: $target}, 500);
+        });
+    } else {
+
+        $('a.koni-header-link').on('click', function(event) {
+            event.preventDefault();
+            var $anchor = $(this);
+            const $target = $($anchor.attr('href').substring(1)).offset().top;
+            clearActiveClass($('a.koni-header-link'));
+            $anchor.addClass('active');
+            $('html, body').stop().animate({scrollTop: $target}, 500);
+        });
+    }
 });

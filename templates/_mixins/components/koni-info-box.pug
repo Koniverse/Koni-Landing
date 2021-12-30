@@ -10,7 +10,7 @@ mixin koni-galaxy-info-box(galaxyInfoBoxImg ,galaxyInfoBoxTitle, galaxyInfoBoxTe
 mixin koni-filled-info-box(filledInfoBoxTitle, filledInfoBoxText, extraClass, showInfoBox)
     .koni-filled-info-box-container(class=`${extraClass}`)
         .koni-filled-info-box__title.h-fz-40=filledInfoBoxTitle
-        .koni-filled-info-box__text.h-fz-15=filledInfoBoxText
+        .koni-filled-info-box__text.h-fz-15.h-info-text-show-less=filledInfoBoxText
         .koni-filled-info-box-btn
             +koni-button-with-icon(showInfoBox.text, showInfoBox.img, '')
 

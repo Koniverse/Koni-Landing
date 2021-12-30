@@ -1,0 +1,31 @@
+.koni-left-img-background-1 {
+  position: relative;
+  width: 661px;
+  height: 661px;
+  margin-left: -330px;
+  background: radial-gradient(41.68% 41.68% at 50% 50%, rgba(209, 56, 248, 0.54) 0%, rgba(220, 81, 255, 0) 100%);
+}
+
+.koni-left-img-background-1__img-1,
+.koni-left-img-background-1__img-2,
+.koni-left-img-background-1__img-3 {
+  position: absolute;
+}
+
+.koni-left-img-background-1__img-1 {
+  top: 50px;
+  left: 330px;
+  width: 435px;
+}
+
+.koni-left-img-background-1__img-2 {
+  width: 170px;
+  left: 330px;
+  top: 150px;
+}
+.koni-left-img-background-1__img-3 {
+  width: 32px;
+  left: 385px;
+  top: 620px;
+  z-index: -1;
+}
