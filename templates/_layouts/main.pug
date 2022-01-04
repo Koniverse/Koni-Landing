@@ -27,7 +27,22 @@ html(lang='en')
         script(src=url('/main.js'))
         script(src=url('slick/slick.min.js'))
         //script(src=url('one-page-scroll/slideNav.js'))
-        //script.
-        //    window.slide = new SlideNav({
-        //        changeHash: false
-        //    });
+        script(src=url('bodymovin/lottie.min.js'))
+        script.
+            //window.slide = new SlideNav({
+            //    changeHash: true
+            //});
+
+            const bgVideos = document.querySelectorAll('.bg-video')
+            bgVideos.forEach(initAnimation)
+
+            function initAnimation(video) {
+                const src = video?.dataset.src
+                var animation = bodymovin.loadAnimation({
+                  container: video,
+                  path: src,
+                  renderer: 'svg',
+                  loop: true,
+                  autoplay: true
+                })
+            }

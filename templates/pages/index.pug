@@ -19,9 +19,7 @@ block content
                 +koni-button('start building')
     .koni-hp-second-section-container#about-us
         .koni-video-background-2
-            video#myVideo2.koni-background-video-2(autoplay=true muted=true loop=true)
-                source(src=url('/video-background/home-2.mp4') type='video/mp4')
-                |           Your browser does not support HTML5 video.
+            .bg-video.koni-background-video-2(data-src=url('/video-json/video-2.json'))
             .koni-hp-transform-background
         .container.px-4
             .row.gx-0
@@ -56,9 +54,7 @@ block content
         .container.px-4
             .koni-hp-our-team-content-wrapper
                 .koni-hp-our-team-left-content
-                    video.koni-our-team-background-video(autoplay=true muted=true loop=true)
-                        source(src=url('/video-background/home-3.mp4') type='video/mp4')
-                        |           Your browser does not support HTML5 video.
+                    .bg-video.koni-our-team-background-video(data-src=url('/video-json/video-3.json'))
                 .koni-hp-our-team-right-content
                     .koni-hp-our-team-title.h-fz-68.h-t-right Our Team
                     .koni-hp-our-team-slicker-container
@@ -70,12 +66,7 @@ block content
                                             .koni-hp-child-group
                                                 each ourTeamItem in ourTeamChildGr
                                                     +koni-linear-info-box('', ourTeamItem.title, ourTeamItem.subtitle, ourTeamItem.text)
-    .koni-portfolios-container
-        video.koni-background-video-4(autoplay=true muted=true loop=true)
-            source(src=url('/video-background/home-4.mp4') type='video/mp4')
-            |           Your browser does not support HTML5 video.
-
-    .container.px-4#our-advisors
+    .container.px-4#our-advisors.our-advisors
         .koni-hp-our-advisor-container
             .koni-hp-our-advisor-title.h-t-left.h-fz-68 Our Advisor
             .koni-hp-ouradvisor-slicker-wrapper
@@ -83,11 +74,12 @@ block content
                     .koni-hp-our-advisor-wrapper
                         +koni-advisors-item(advisorItem.img, advisorItem.name, advisorItem.position)
 
-    .container.px-4
-        .koni-hp-our-portfolio-title.h-fz-18.h-t-uppercase our portfolio
-        .koni-hp-our-portfolio-content
-            each portfolio in aboutUs.portfolio
-                +koni-portfolio-item(portfolio)
+        .container.px-4.koni-hp-our-portfolio
+            .bg-video.koni-background-video-4(data-src=url('/video-json/video-4.json'))
+            .koni-hp-our-portfolio-title.h-fz-18.h-t-uppercase our portfolio
+            .koni-hp-our-portfolio-content
+                each portfolio in aboutUs.portfolio
+                    +koni-portfolio-item(portfolio)
 
     .container.px-4#partner-and-backer
         .koni-hp-partner-and-backer-title.h-fz-18.h-t-uppercase partner and backer
