@@ -1,7 +1,10 @@
 .koni-portfolio-container {
   max-width: 170px;
-  margin: 0 40px;
   position: relative;
+  transition: .3s all;
+  img {
+    transition: .3s all;
+  }
 }
 
 .koni-portfolio-logo, .koni-portfolio-logo-hover {
@@ -18,6 +21,7 @@
 }
 
 .koni-portfolio-container:hover {
+  transform: translate3d(0,-5px,0);
   .koni-portfolio-logo {
     opacity: 0;
   }

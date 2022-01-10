@@ -24,6 +24,10 @@
   margin: 15px;
   position:relative;
   z-index:0;
+  transition: .3s all;
+  &:hover {
+    transform: translate3d(0,-5px,0);
+  }
 }
 
 .koni-linear-info-box-container:before {
@@ -104,7 +108,7 @@
   margin-right: 0;
 }
 
-.koni-linear-info-box-container-2:before {
+.koni-linear-info-wrapper-2:before {
   content:"";
   position:absolute;
   z-index:-1;
@@ -121,11 +125,16 @@
 }
 
 .koni-linear-info-wrapper-2 {
+  position: relative;
   background: rgba(255, 255, 255, 0.13);
   width: 100%;
   height: 100%;
   border-radius: 10px;
   padding: 32px 30px 37px;
+  transition: .3s all;
+  &:hover {
+    transform: translate3d(0, -5px,0);
+  }
 }
 
 .koni-linear-info-box-header-2__title {

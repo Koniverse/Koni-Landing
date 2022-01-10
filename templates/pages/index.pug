@@ -6,23 +6,22 @@ block append head
     meta(property='description' content=siteDescription)
 
 block content
-    //.koni-hp-container
-    //    img(src=url('/images/star.png'))
+    .bg-sky
+        .stars
+        .stars1
+        .stars2
+        .shooting-stars
     .koni-header-background
         video.koni-top-background-video(autoplay=true muted=true loop=true)
             source(src=url('/video-background/home-1.mp4') type='video/mp4')
             |           Your browser does not support HTML5 video.
-        .container.px-4
+        .container
             .koni-hp-first-section-container
                 .koni-hp-section-title.h-fz-76.h-t-center We research & invest in great solutions.
                 .koni-hp-section-subtitle.h-fz-20.h-t-center That support the growth of the Web3 ecosystem.
                 +koni-button('start building')
     .koni-hp-second-section-container#about-us
-        .koni-video-background-2
-            .bg-video.koni-background-video-2(data-src=url('/video-json/video-2-1.json'))
-            .bg-video.koni-background-video-2-2(data-src=url('/video-json/video-2-2.json'))
-            .koni-hp-transform-background
-        .container.px-4
+        .container
             .row.gx-0
                 .koni-hp-second-section-left-item.col-lg-6
                     .h-t-uppercase.h-color.h-fz-18 koni studio
@@ -32,10 +31,16 @@ block content
                 .koni-hp-second-section-right-item.col-lg-6
                     each visionAndMission in aboutUs.visionAndMission
                         +koni-basic-info-box(visionAndMission.title, visionAndMission.text)
-
+        .koni-video-background-2
+            .container
+                .bg-video.koni-background-video-2
+                    lottie-player(autoplay loop speed="0.5" src=url('/video-json/video-2-1.json'))
+                .bg-video.koni-background-video-2-2
+                    lottie-player(autoplay loop speed="0.5" src=url('/video-json/video-2-2.json'))
+            .koni-hp-transform-background
     .koni-hp-third-section-container#our-activities
         +koni-left-img-background-1
-        .koni-hp-third-section-wrapper.container.px-4
+        .koni-hp-third-section-wrapper.container
             .koni-hp-third-section-title.h-fz-68.h-t-right Our Activities
             .row.gx-0
                 //img.koni-hp-third-section-right-background(src=url("/images/third-background-img.svg"))
@@ -43,7 +48,7 @@ block content
                     .koni-hp-third-section-item.col-xl-4
                         +koni-galaxy-info-box(activityItem.img, activityItem.title, activityItem.text, '')
 
-    .container.px-4#our-product
+    .container#our-product
         .koni-hp-our-product-section-container
             .koni-hp-our-product-section-title.h-fz-68.h-t-left Our Product
             .koni-hp-our-product-content-wrapper
@@ -52,10 +57,11 @@ block content
                 +koni-filled-info-box(aboutUs.ourProduct.koniVerse.title, aboutUs.ourProduct.koniVerse.text, 'koni-hp-our-product-koniverse', {text: 'show more', img: 'plus'})
     .koni-hp-our-team-container
         img.koni-our-team-background-img(src=url('images/our-team-background.png'))
-        .container.px-4
+        .container
             .koni-hp-our-team-content-wrapper
                 .koni-hp-our-team-left-content
                     .bg-video.koni-our-team-background-video(data-src=url('/video-json/video-3.json'))
+                        lottie-player(autoplay loop speed="0.5" src=url('/video-json/video-3.json'))
                 .koni-hp-our-team-right-content
                     .koni-hp-our-team-title.h-fz-68.h-t-right Our Team
                     .koni-hp-our-team-slicker-container
@@ -67,7 +73,8 @@ block content
                                             .koni-hp-child-group
                                                 each ourTeamItem in ourTeamChildGr
                                                     +koni-linear-info-box('', ourTeamItem.title, ourTeamItem.subtitle, ourTeamItem.text)
-    .container.px-4#our-advisors.our-advisors
+                        .koni-hp-ourteam-slick-controls
+    .container#our-advisors.our-advisors
         .koni-hp-our-advisor-container
             .koni-hp-our-advisor-title.h-t-left.h-fz-68 Our Advisor
             .koni-hp-ouradvisor-slicker-wrapper
@@ -75,20 +82,21 @@ block content
                     .koni-hp-our-advisor-wrapper
                         +koni-advisors-item(advisorItem.img, advisorItem.name, advisorItem.position)
 
-        .container.px-4.koni-hp-our-portfolio
-            .bg-video.koni-background-video-4(data-src=url('/video-json/video-4.json'))
-            .koni-hp-our-portfolio-title.h-fz-18.h-t-uppercase our portfolio
-            .koni-hp-our-portfolio-content
-                each portfolio in aboutUs.portfolio
-                    +koni-portfolio-item(portfolio)
+    .container.koni-hp-our-portfolio
+        .bg-video.koni-background-video-4
+            lottie-player(autoplay loop speed="0.5" src=url('/video-json/video-4.json'))
+        .koni-hp-our-portfolio-title.h-fz-18.h-t-uppercase our portfolio
+        .koni-hp-our-portfolio-content
+            each portfolio in aboutUs.portfolio
+                +koni-portfolio-item(portfolio)
 
-    .container.px-4#partner-and-backer
+    .container#partner-and-backer
         .koni-hp-partner-and-backer-title.h-fz-18.h-t-uppercase partner and backer
         .koni-partners-and-backers-wrapper
             each partnerAndBacker in aboutUs.partnersAndBackers
                 +koni-partner-and-backer-item(partnerAndBacker)
 
-    .container.px-4#blogposts
+    .container#blogposts
         .koni-hp-blogposts-container
             .koni-hp-blogposts-title.h-fz-68.h-t-left Blog Posts
             .koni-hp-blogposts-content-wrapper

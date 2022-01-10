@@ -2,3 +2,16 @@
   display: flow-root;
   min-width: $min-width;
 }
+// Override container
+@media (min-width: breakpoint-min('xxl')) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: breakpoint-min('sm')) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}

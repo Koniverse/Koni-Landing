@@ -60,7 +60,9 @@ $(function () {
                     slidesToScroll: 1,
                 }
             }
-        ]
+        ],
+        appendDots: '.koni-hp-ourteam-slick-controls',
+        appendArrows: '.koni-hp-ourteam-slick-controls'
     })
 
     $('.koni-hp-ouradvisor-slicker-wrapper').slick({

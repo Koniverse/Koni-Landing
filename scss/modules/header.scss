@@ -5,7 +5,7 @@
   width: 100%;
   top: 0;
   z-index: 100;
-  transition: transform 0.4s, background-color 0.4s;
+  transition: transform 0.4s, all 0.4s;
 }
 
 .koni-header__placeholder {
@@ -43,6 +43,10 @@
 
 .koni-header__right-menu {
   justify-content: flex-end;
+}
+
+.koni-header-link {
+  transition: .3s all;
 }
 
 .koni-menu-item-btn {
@@ -190,9 +194,10 @@
 
 .scroll-up .koni-header-desktop,
 .scroll-up .koni-header-mobile {
-  background-color: var(--bgc);
+  //background-color: var(--bgc);
   transform: none;
   top: 0;
+  backdrop-filter: blur(30px);
 }
 
 .scroll-up .koni-header,

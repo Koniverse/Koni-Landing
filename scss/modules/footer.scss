@@ -12,7 +12,7 @@
 .koni-footer-linear-background {
   height: 268px;
   width: 100%;
-  background: linear-gradient(180deg, rgba(19, 0, 54, 0.01) 0%, #120031 76.87%);
+  background: linear-gradient(180deg, rgba(19, 0, 54, 0.01) 0%, var(--bgc) 76.87%);
   //background-color: red;
   display: flex;
   flex-direction: column;

@@ -11,21 +11,21 @@
   }
 
   .koni-hp-second-section-container {
-    padding-top: 162px;
+    padding-top: 120px;
     position: relative;
-    height: 1250px;
   }
 
   .koni-video-background-2 {
-    position: absolute;
+    position: relative;
     z-index: -1;
-    bottom: 0;
     width: 100%;
+    margin-top: -100px;
   }
 
   .koni-background-video-2 {
-    width: 100%;
+    width: 130%;
     height: 100%;
+    transform: translateX(-10%);
   }
   .koni-background-video-2-2 {
     position: absolute;
@@ -36,9 +36,9 @@
   .koni-hp-transform-background {
     width: 100%;
     height: 127px;
-    background: linear-gradient(180deg, rgba(19, 0, 54, 0.01) 0%, #120031 76.87%);
+    background: linear-gradient(180deg, rgba(19, 0, 54, 0.01) 0%, var(--bgc) 76.87%);
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
   }
 
   .koni-hp-second-section-left-item {
@@ -56,7 +56,6 @@
 
   .koni-hp-second-section-right-item .koni-basic-info-box {
       margin-bottom: 40px;
-      margin-right: 180px;
   }
 
   .koni-hp-second-section-left-item__text {
@@ -92,6 +91,7 @@
 
   .koni-hp-third-section-container {
     position: relative;
+    padding-top: 50px;
 
     .koni-left-img-background-1-wrapper {
       position: absolute;
@@ -192,7 +192,6 @@
 
   .koni-our-team-background-video {
     width: 360px;
-    margin: 0 auto;
   }
 
   .koni-hp-our-team-content-wrapper {
@@ -200,22 +199,49 @@
   }
 
   .koni-hp-our-team-left-content {
-    flex: 1;
+    flex: 0 0 auto;
+    width: 440px;
   }
 
   .koni-hp-our-team-right-content {
-    flex: 2;
     width: 100%;
+    @media (min-width: breakpoint-min('xl')) {
+      width: calc(100% - 440px);
+    }
+    @media (min-width: breakpoint-min('xxl')) {
+      padding-left: 50px;
+    }
   }
 
   .koni-hp-our-team-slicker-container {
     height: 100%;
     display: flex;
     align-items: center;
+    position: relative;
+  }
+  .koni-hp-ourteam-slick-controls {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-flow: column;
+    padding: 75px 0 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    .slick-dots {
+      position: static;
+    }
+    .slick-arrow {
+      position: absolute;
+      top: 0;
+      &.slick-next {
+        bottom: 0;
+        top: auto;
+      }
+    }
   }
 
   .koni-hp-our-team-group {
-    padding-right: 90px;
+    padding-right: 80px;
     padding-top: 15px;
   }
 
@@ -266,12 +292,13 @@
 
   .koni-background-video-4 {
     position: absolute;
-    right: -80px;
     width: 500px;
+    right: 0;
     z-index: -1;
     top: 20px;
-    @media (min-width: breakpoint-min('xxl')) {
-      right: 10%;
+    display: none;
+    @media (min-width: breakpoint-min('xl')) {
+      display: block;
     }
   }
 
@@ -280,9 +307,13 @@
   }
 
   .koni-hp-our-portfolio-content {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     max-width: 60%;
+    grid-template-columns: repeat(2, 1fr);
+    @media (min-width: breakpoint-min('sm')) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   .koni-hp-our-portfolio-title, .koni-hp-partner-and-backer-title {
@@ -291,13 +322,19 @@
   }
 
   .koni-partners-and-backers-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media (min-width: breakpoint-min('sm')) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: breakpoint-min('xl')) {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 
   .koni-hp-blogposts-container {
     margin-bottom: 260px;
+    padding-top: 80px;
   }
 
   .koni-hp-blogposts-title {
@@ -318,7 +355,6 @@
     }
     .koni-hp-second-section-container {
       padding-top: 0;
-      height: 1000px;
     }
 
     .koni-hp-third-section-title {
@@ -361,7 +397,7 @@
     }
 
     .koni-hp-our-product-section-title {
-      padding: 50px 0 0;
+      padding: 70px 0 0;
     }
 
     .koni-hp-our-product-content-wrapper {
@@ -383,7 +419,7 @@
     }
 
     .koni-hp-our-team-container {
-      padding-top: 25px;
+      padding-top: 60px;
     }
 
     .koni-hp-our-team-group {
@@ -408,8 +444,7 @@
     }
 
     .koni-video-background-2 {
-      bottom: 0;
-      top: auto;
+      margin-top: 0;
     }
 
     .koni-hp-third-section-item,
@@ -440,6 +475,7 @@
 
     .koni-hp-blogposts-title {
       padding-top: 10px;
+      padding-bottom: 40px;
     }
   }
 
@@ -478,18 +514,6 @@
 
     .koni-our-team-background-img {
       width: 1600px;
-    }
-
-    .koni-hp-our-team-slicker-container .slick-prev {
-      top: 39%;
-    }
-
-    .koni-hp-our-team-slicker-container .slick-next {
-      bottom: 40%;
-    }
-
-    .koni-hp-our-team-group {
-      padding-right: 60px;
     }
   }
 
